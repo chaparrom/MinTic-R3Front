@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/funciones.js"></script>
+        <title> Aplicación CABAÑAS </title>
+    </head>
+    <body>
+<!------------------------------------------------------------------------------------------------------>
+        <h1>Clientes</h1>
+        <br>
+        <div id="resultadoCliente"></div>
+        <br>
+        <div>
+            <input type="number" id="idCliente" placeholder="id" style="width: 45px" readonly>
+            <input type="text" id="name" placeholder="Nombre" style="width: 210px">
+            <input type="text" id="email" placeholder="Correo Electrónico" style="width: 210px">
+            <input type="number" id="age" placeholder="Edad" style="width: 50px">
+            <input type="password" id="password" placeholder="Contraseña" style="width: 100px">
+        </div>
+        <br>
+        <button onclick="consultarCliente()">Consultar</button>
+        <button onclick="adicionarCliente()">Adicionar</button>
+        <hr>
+<!------------------------------------------------------------------------------------------------------>
+        <h1>Cabañas</h1>
+        <br>
+        <div id="resultadoCabaña"></div>
+        <br>
+        <div>
+            <input type="number" id="idCabaña" placeholder="id" style="width: 45px" readonly>
+            <input type="text" id="name1" placeholder="Nombre" style="width: 200px">
+            <input type="text" id="brand" placeholder="Tipo" style="width: 205px">
+            <input type="number" id="rooms" placeholder="Habitaciones" style="width: 85px">
+            <input type="text" id="description" placeholder="Descripción" style="width: 250px">
+        </div>
+        <br>
+        <button onclick="consultarCabaña()">Consultar</button>
+        <button onclick="adicionarCabaña()">Adicionar</button>
+        <hr>
+<!------------------------------------------------------------------------------------------------------>
+        <h1>Mensajes</h1>
+        <br>
+        <div id="resultadoMensaje"></div>
+        <br>
+        <div>
+            <input type="text" id="messagetext" placeholder="Mensaje" style="width: 600px">
+        </div>
+        <br>
+        <button onclick="consultarMensaje()">Consultar</button>
+        <button onclick="adicionarMensaje()">Adicionar</button>
+        <hr>
+<!------------------------------------------------------------------------------------------------------>
+        <h1>Categorías</h1>
+        <br>
+        <div id="resultadoCategoria"></div>
+        <br>
+        <div>
+            <input type="text" id="name2" placeholder="Nombre" style="width: 100px">
+            <input type="text" id="description2" placeholder="Descripción" style="width: 205px">
+        </div>
+        <br>
+        <button onclick="consultarCategoria()">Consultar</button>
+        <button onclick="adicionarCategoria()">Adicionar</button>
+        <hr>
+<!------------------------------------------------------------------------------------------------------>
+        <h1>Reservaciones</h1>
+        <br>
+        <div id="resultadoReservacion"></div>
+        <br>
+        <div>
+            <input type="number" id="idReservacion" placeholder="id" style="width: 45px" readonly>
+            <input type="date" id="startDate" placeholder="Fecha Inicio" style="width: 150px">
+            <input type="date" id="endDate" placeholder="Fecha Devolucion" style="width: 150px">
+            <input type="text" id="status" placeholder="Estado" style="width: 100px">
+            <input type="text" id="score" placeholder="Calificacion" style="width: 100px">
+        </div>
+        <br>
+        <button onclick="consultarReservacion()">Consultar</button>
+        <button onclick="adicionarReservacion()">Adicionar</button>
+        <hr>
+    </body>
+</html>
